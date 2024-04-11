@@ -1,0 +1,194 @@
+{
+   "ExpandedHierarchyInLayout":"",
+   "guistr":"# # String gsaved with Nlview 6.8.11  2018-08-07 bk=1.4403 VDI=40 GEI=35 GUI=JA:9.0 non-TLS
+#  -string -flagsOSRD
+preplace port RX -pg 1 -y 2120 -defaultsOSRD
+preplace port iic_rtl -pg 1 -y 2400 -defaultsOSRD
+preplace port MCLK_O -pg 1 -y 2000 -defaultsOSRD
+preplace port sys_clock_0 -pg 1 -y 2310 -defaultsOSRD
+preplace port VGA_VS -pg 1 -y 2180 -defaultsOSRD
+preplace port SDATA_O -pg 1 -y 2020 -defaultsOSRD
+preplace port usb_uart -pg 1 -y 2550 -defaultsOSRD
+preplace port BCLK_O -pg 1 -y 1960 -defaultsOSRD
+preplace port VGA_HS -pg 1 -y 2160 -defaultsOSRD
+preplace port SDATA_I -pg 1 -y 2140 -defaultsOSRD
+preplace port LRCLK_O -pg 1 -y 1980 -defaultsOSRD
+preplace port reset -pg 1 -y 2290 -defaultsOSRD
+preplace portBus VGA_B -pg 1 -y 2140 -defaultsOSRD
+preplace portBus VGA_R -pg 1 -y 2100 -defaultsOSRD
+preplace portBus LED -pg 1 -y 1450 -defaultsOSRD
+preplace portBus VGA_G -pg 1 -y 2120 -defaultsOSRD
+preplace inst xfft_0_FWD1 -pg 1 -lvl 4 -y 310 -defaultsOSRD
+preplace inst filterBP_0_postProcessing -pg 1 -lvl 8 -y 1940 -defaultsOSRD
+preplace inst vga_driver_0_upgraded_ipi -pg 1 -lvl 9 -y 2200 -defaultsOSRD
+preplace inst xfft_0_FWD -pg 1 -lvl 4 -y 1810 -defaultsOSRD
+preplace inst xlconstant_0_windowEnable -pg 1 -lvl 1 -y 2470 -defaultsOSRD
+preplace inst axi_iic_0 -pg 1 -lvl 9 -y 2420 -defaultsOSRD
+preplace inst axi_bram_ctrl_0_bram -pg 1 -lvl 10 -y 1730 -defaultsOSRD
+preplace inst xfft_INV -pg 1 -lvl 5 -y 1430 -defaultsOSRD
+preplace inst filterBP_0_preProcessing -pg 1 -lvl 5 -y 1810 -defaultsOSRD
+preplace inst i2s_rx_tx_0 -pg 1 -lvl 10 -y 2000 -defaultsOSRD
+preplace inst microblaze_0_axi_periph -pg 1 -lvl 8 -y 2360 -defaultsOSRD
+preplace inst fwdFFT_0 -pg 1 -lvl 3 -y 1660 -defaultsOSRD
+preplace inst c_addsub_0 -pg 1 -lvl 7 -y 1530 -defaultsOSRD
+preplace inst fwdFFT_1 -pg 1 -lvl 5 -y 120 -defaultsOSRD
+preplace inst microblaze_0_xlconcat -pg 1 -lvl 2 -y 2590 -defaultsOSRD
+preplace inst invFFT_0 -pg 1 -lvl 4 -y 1400 -defaultsOSRD
+preplace inst proc_sys_reset_0 -pg 1 -lvl 4 -y 2250 -defaultsOSRD
+preplace inst xfft_INV1 -pg 1 -lvl 4 -y 790 -defaultsOSRD
+preplace inst invFFT_1 -pg 1 -lvl 5 -y 610 -defaultsOSRD
+preplace inst dataPath_0 -pg 1 -lvl 6 -y 1550 -defaultsOSRD
+preplace inst uart_reader_0 -pg 1 -lvl 5 -y 2050 -defaultsOSRD
+preplace inst dataPath_1 -pg 1 -lvl 6 -y 920 -defaultsOSRD
+preplace inst microblaze_0_axi_intc -pg 1 -lvl 6 -y 2380 -defaultsOSRD
+preplace inst mdm_1 -pg 1 -lvl 6 -y 2570 -defaultsOSRD
+preplace inst xlconstant_1_filterClkEn -pg 1 -lvl 4 -y 2060 -defaultsOSRD
+preplace inst fifo_ctrl_0 -pg 1 -lvl 6 -y 1820 -defaultsOSRD
+preplace inst microblaze_0 -pg 1 -lvl 7 -y 2570 -defaultsOSRD
+preplace inst axi_uartlite_0 -pg 1 -lvl 9 -y 2560 -defaultsOSRD
+preplace inst fifo_generator_0 -pg 1 -lvl 7 -y 1770 -defaultsOSRD
+preplace inst rst_clk_wiz_1_100M -pg 1 -lvl 2 -y 2390 -defaultsOSRD
+preplace inst clk_wiz_0 -pg 1 -lvl 3 -y 2270 -defaultsOSRD
+preplace inst axi_child_v1_0_S00_A_0 -pg 1 -lvl 9 -y 1470 -defaultsOSRD
+preplace inst fft_output_format_0 -pg 1 -lvl 5 -y 1100 -defaultsOSRD
+preplace inst microblaze_0_local_memory -pg 1 -lvl 8 -y 2670 -defaultsOSRD
+preplace inst clk_wiz_1 -pg 1 -lvl 1 -y 2360 -defaultsOSRD
+preplace inst axi_bram_ctrl_0 -pg 1 -lvl 9 -y 1870 -defaultsOSRD
+preplace netloc microblaze_0_axi_periph_M02_AXI 1 8 1 3500
+preplace netloc axi_child_v1_0_S00_A_0_multiplier 1 5 5 2170 1200 NJ 1200 NJ 1200 NJ 1200 4020
+preplace netloc xfft_INV_m_axis_data_tlast 1 3 3 1050 1560 1540J 1620 2040
+preplace netloc xfft_INV_s_axis_config_tready1 1 3 2 1040 970 1470
+preplace netloc fwdFFT_0_configValidFFT1 1 3 3 1050 500 1570J 490 2070
+preplace netloc invFFT_0_dataOut 1 4 2 1560 1660 2110J
+preplace netloc fwdFFT_0_dataOut 1 3 3 NJ 1600 1480J 1700 2100
+preplace netloc xfft_INV_m_axis_data_tlast1 1 4 1 1510
+preplace netloc xfft_0_m_axis_data_tvalid1 1 4 1 1480
+preplace netloc microblaze_0_axi_periph_M03_AXI 1 8 1 3420
+preplace netloc invFFT_0_mIFFTSData1 1 3 3 1040 600 1570J 730 2050
+preplace netloc vga_driver_0_VGA_B 1 9 2 NJ 2140 NJ
+preplace netloc microblaze_0_axi_periph_M01_AXI 1 8 1 3380
+preplace netloc xfft_0_m_axis_data_tdata1 1 4 1 1460
+preplace netloc vga_driver_0_upgraded_ipi_BRAM_PORTB_0_din 1 9 1 4130
+preplace netloc xfft_0_m_axis_data_tlast 1 2 3 620 1990 NJ 1990 1460
+preplace netloc axi_iic_0_IIC 1 9 2 NJ 2400 NJ
+preplace netloc xfft_INV_m_axis_data_tdata1 1 4 1 1460
+preplace netloc fwdFFT_0_configDataFFT 1 3 1 940
+preplace netloc microblaze_0_intc_axi 1 5 4 2190 2160 NJ 2160 NJ 2160 3380
+preplace netloc microblaze_0_dlmb_1 1 7 1 3050
+preplace netloc xfft_INV_m_axis_data_tuser 1 5 4 N 1410 NJ 1410 NJ 1410 3530J
+preplace netloc sys_clock_0_1 1 0 3 30 2280 NJ 2280 NJ
+preplace netloc fwdFFT_0_mFFTSData1 1 3 3 1040 120 1610J 240 2050
+preplace netloc fft_output_format_0_bin0 1 5 4 2150J 1040 NJ 1040 NJ 1040 3580
+preplace netloc vga_driver_0_VGA_G 1 9 2 NJ 2120 NJ
+preplace netloc filterBP_0_filter_out 1 8 2 3520 2020 4070J
+preplace netloc fft_output_format_0_bin1 1 5 4 2140J 1050 NJ 1050 NJ 1050 3570
+preplace netloc rst_clk_wiz_1_100M_mb_reset 1 2 5 600 2400 NJ 2400 NJ 2400 2030 2500 2510J
+preplace netloc invFFT_0_dataOut1 1 5 1 2140
+preplace netloc fft_output_format_0_bin2 1 5 4 2130J 1060 NJ 1060 NJ 1060 3560
+preplace netloc i2s_rx_tx_0_LRCLK_O 1 10 1 NJ
+preplace netloc xfft_INV_s_axis_data_tready 1 3 2 1020 1280 1610
+preplace netloc invFFT_0_configData_IFFT 1 4 1 1590
+preplace netloc uart_reader_0_number_wire 1 5 4 2160 1700 2530J 1630 NJ 1630 3440J
+preplace netloc fft_output_format_0_bin3 1 5 4 NJ 1070 NJ 1070 NJ 1070 3550
+preplace netloc xfft_INV_s_axis_data_tready1 1 3 2 1020 590 1610J
+preplace netloc xfft_0_m_axis_data_tlast1 1 4 1 1520
+preplace netloc fft_output_format_0_bin4 1 5 4 NJ 1090 NJ 1090 NJ 1090 3540
+preplace netloc uart_reader_0_value 1 5 4 2140 1690 2520J 1620 NJ 1620 3400J
+preplace netloc axi_bram_ctrl_0_bram_douta 1 9 1 4070
+preplace netloc rst_clk_wiz_1_100M_bus_struct_reset 1 2 6 590 2700 NJ 2700 NJ 2700 NJ 2700 NJ 2700 NJ
+preplace netloc i2s_rx_tx_0_SDATA_O 1 10 1 NJ
+preplace netloc fft_output_format_0_bin5 1 5 4 NJ 1110 NJ 1110 NJ 1110 3510
+preplace netloc axi_bram_ctrl_0_bram_doutb 1 8 2 3580 2040 4120
+preplace netloc axi_bram_ctrl_0_bram_we_a 1 9 1 4090
+preplace netloc xfft_INV_m_axis_data_tdata 1 3 6 1040 1550 1550J 1610 2060 1420 NJ 1420 NJ 1420 3490J
+preplace netloc processingPath_0_axi_clk 1 3 5 1000 1630 1520 1680 2050J 1720 2540 1920 3070J
+preplace netloc fwdFFT_0_mFFTSData 1 3 1 990
+preplace netloc vga_driver_0_bram_en 1 9 1 4150
+preplace netloc fft_output_format_0_bin6 1 5 4 NJ 1130 NJ 1130 NJ 1130 3470
+preplace netloc i2s_rx_tx_0_MCLK_O 1 10 1 NJ
+preplace netloc xfft_INV_m_axis_data_tvalid 1 3 3 1020 1570 1530J 1630 2030
+preplace netloc microblaze_0_ilmb_1 1 7 1 3040
+preplace netloc invFFT_0_configValid_IFFT1 1 3 3 1050 980 1610J 780 2070
+preplace netloc xlconstant_1_dout 1 4 4 1510 1930 NJ 1930 NJ 1930 NJ
+preplace netloc fft_output_format_0_bin7 1 5 4 NJ 1150 NJ 1150 NJ 1150 3460
+preplace netloc microblaze_0_interrupt 1 6 1 2530
+preplace netloc fifo_generator_0_dout 1 5 2 2180 1710 2510J
+preplace netloc dataPath_0_audiodataOut 1 6 1 2490
+preplace netloc fwdFFT_0_sFFTMReady1 1 4 2 NJ 280 2040
+preplace netloc fft_output_format_0_bin8 1 5 4 NJ 1170 NJ 1170 NJ 1170 3450
+preplace netloc fwdFFT_0_mFFTSLast 1 3 1 960
+preplace netloc fft_output_format_0_bin9 1 5 4 NJ 1190 NJ 1190 NJ 1190 3410
+preplace netloc mdm_1_debug_sys_rst 1 1 6 250 2490 NJ 2490 NJ 2490 NJ 2490 NJ 2490 2500
+preplace netloc SDATA_I_0_1 1 0 10 NJ 2140 NJ 2140 NJ 2140 960J 2130 1620J 2120 2190J 2040 NJ 2040 NJ 2040 3430 2010 NJ
+preplace netloc axi_iic_0_iic2intc_irpt 1 1 9 250 2660 NJ 2660 NJ 2660 NJ 2660 NJ 2660 NJ 2660 3030J 2580 3410J 2640 4030
+preplace netloc axi_bram_ctrl_0_bram_clk_a 1 9 1 4050
+preplace netloc xfft_0_s_axis_config_tready 1 2 2 590 1860 NJ
+preplace netloc fifo_ctrl_0_write_en 1 6 1 2530
+preplace netloc axi_child_v1_0_S00_A_0_windowEnable 1 5 5 2190 1430 NJ 1430 NJ 1430 3390J 1740 4020
+preplace netloc proc_sys_reset_0_peripheral_aresetn 1 4 6 1590 1900 NJ 1900 2550 1940 3040 2030 3450J 1990 N
+preplace netloc fwdFFT_0_configValidFFT 1 3 1 980
+preplace netloc axi_uartlite_0_UART 1 9 2 NJ 2550 NJ
+preplace netloc c_addsub_0_S 1 7 1 3080
+preplace netloc vga_driver_0_bram_address 1 9 1 4100
+preplace netloc microblaze_0_Clk 1 1 8 250 2290 620J 2350 NJ 2350 1630 2130 2050 2260 2540 2280 3070 2560 3490
+preplace netloc xfft_0_m_axis_data_tuser 1 4 5 1630 1640 2070J 1380 NJ 1380 NJ 1380 NJ
+preplace netloc RX_1 1 0 5 NJ 2120 NJ 2120 NJ 2120 NJ 2120 1550J
+preplace netloc axi_child_v1_0_S00_A_0_windowVal 1 5 5 2160 1680 2510J 1610 NJ 1610 3380J 1750 4030
+preplace netloc dataPath_0_fftIn 1 2 5 590 1540 930J 1590 1490J 1690 2030J 1740 2500
+preplace netloc fwdFFT_0_dataOut1 1 5 1 2150
+preplace netloc vga_driver_0_VGA_HS 1 9 2 NJ 2160 NJ
+preplace netloc dataPath_0_ifftIn 1 3 4 1010 1580 1500J 1670 NJ 1670 2490
+preplace netloc vga_driver_0_upgraded_ipi_VGA_R 1 9 2 4020J 2110 4470J
+preplace netloc fwdFFT_0_mFFTSValid 1 3 1 970
+preplace netloc xfft_0_s_axis_data_tready 1 2 2 610 1790 990J
+preplace netloc invFFT_0_mIFFTSLast1 1 3 3 1050 610 1520J 740 2030
+preplace netloc clk_wiz_1_locked 1 1 1 230
+preplace netloc i2s_rx_tx_0_to_datapath 1 4 7 1630 1910 NJ 1910 NJ 1910 3040J 1850 3480 2030 4040J 2100 4460
+preplace netloc axi_bram_ctrl_0_bram_addr_a 1 9 1 4040
+preplace netloc microblaze_0_debug 1 6 1 N
+preplace netloc filterBP_0_preProcessing_filter_out 1 5 2 2090 1730 NJ
+preplace netloc microblaze_0_axi_dp 1 7 1 3060
+preplace netloc vga_driver_0_VGA_VS 1 9 2 NJ 2180 NJ
+preplace netloc xfft_0_m_axis_data_tvalid 1 2 3 600 2000 NJ 2000 1450
+preplace netloc fifo_generator_0_full 1 5 2 2190 1750 2520J
+preplace netloc dataPath_0_ifftIn1 1 4 3 1630 800 NJ 800 2490
+preplace netloc vga_driver_0_bram_we 1 9 1 4160
+preplace netloc clk_wiz_0_locked 1 3 1 990
+preplace netloc i2s_rx_tx_0_BCLK_O 1 10 1 NJ
+preplace netloc invFFT_0_mIFFTSData 1 4 1 1600
+preplace netloc fifo_ctrl_0_read_en 1 6 1 N
+preplace netloc xfft_0_m_axis_data_tdata 1 2 7 630 1780 950J 1620 1510 1650 2080J 1400 NJ 1400 NJ 1400 NJ
+preplace netloc invFFT_0_sIFFTMReady1 1 4 2 NJ 760 2040
+preplace netloc microblaze_0_axi_periph_M04_AXI 1 8 1 N
+preplace netloc xfft_INV_m_axis_data_tvalid1 1 4 1 1480
+preplace netloc xfft_0_s_axis_config_tready1 1 3 2 1040 490 1470
+preplace netloc fwdFFT_0_sFFTMReady 1 3 2 930J 1610 1470
+preplace netloc axi_uartlite_0_interrupt 1 1 9 230 2750 NJ 2750 NJ 2750 NJ 2750 NJ 2750 NJ 2750 NJ 2750 NJ 2750 4020
+preplace netloc axi_child_v1_0_S00_A_0_debug_mult 1 9 2 NJ 1450 NJ
+preplace netloc clk_wiz_0_clk_out1 1 3 7 1020 2140 NJ 2140 2120 2050 NJ 2050 NJ 2050 3510J 2000 4140J
+preplace netloc vga_driver_0_upgraded_ipi_BRAM_PORTB_0_clk 1 9 1 4110
+preplace netloc invFFT_0_sIFFTMReady 1 4 2 1570J 1250 2050
+preplace netloc xfft_INV_s_axis_config_tready 1 3 2 1030 1520 1450J
+preplace netloc dataPath_1_audiodataOut 1 6 1 2550
+preplace netloc xfft_0_s_axis_data_tready1 1 3 2 1000 110 NJ
+preplace netloc invFFT_0_mIFFTSValid1 1 3 3 1030 620 1450J 750 2060
+preplace netloc invFFT_0_configData_IFFT1 1 3 3 1030 960 1520J 770 2120
+preplace netloc fwdFFT_0_mFFTSValid1 1 3 3 1030 140 1570J 260 2060
+preplace netloc axi_bram_ctrl_0_bram_en_a 1 9 1 4080
+preplace netloc microblaze_0_intr 1 2 4 630 2390 NJ 2390 NJ 2390 NJ
+preplace netloc invFFT_0_mIFFTSLast 1 4 1 1620
+preplace netloc fwdFFT_0_configDataFFT1 1 3 3 1030 480 NJ 480 2140
+preplace netloc dataPath_0_fftIn1 1 4 3 1620 790 NJ 790 2540
+preplace netloc reset_1 1 0 9 20 2290 240 2270 630 2340 1050 2150 NJ 2150 NJ 2150 NJ 2150 NJ 2150 3390
+preplace netloc invFFT_0_mIFFTSValid 1 4 1 N
+preplace netloc invFFT_0_configValid_IFFT 1 4 1 1580
+preplace netloc fwdFFT_0_mFFTSLast1 1 3 3 1050 130 1450J 250 2030
+preplace netloc rst_clk_wiz_1_100M_peripheral_aresetn 1 2 7 610 2380 NJ 2380 NJ 2380 2160 2270 NJ 2270 3080 2570 3560
+preplace netloc axi_bram_ctrl_0_bram_wrdata_a 1 9 1 4060
+levelinfo -pg 1 0 130 420 780 1250 1830 2340 2790 3230 3800 4310 4490 -top 0 -bot 2760
+"
+}
+{
+   "da_board_cnt":"2",
+   "da_clkrst_cnt":"1"
+}

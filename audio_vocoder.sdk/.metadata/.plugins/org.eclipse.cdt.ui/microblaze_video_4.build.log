@@ -1,0 +1,131 @@
+22:12:52 **** Build of configuration Debug for project microblaze_video_4 ****
+make all 
+'Building file: ../src/audio.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/audio.o" -I../../microblaze_video_4_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/audio.d" -MT"src/audio.o" -o "src/audio.o" "../src/audio.c"
+../src/audio.c: In function 'fnAudioStartupConfig':
+../src/audio.c:168:18: warning: variable 'uConfigurationVariable' set but not used [-Wunused-but-set-variable]
+  union ubitField uConfigurationVariable;
+                  ^~~~~~~~~~~~~~~~~~~~~~
+'Finished building: ../src/audio.c'
+' '
+'Building file: ../src/demo.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/demo.o" -I../../microblaze_video_4_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/demo.d" -MT"src/demo.o" -o "src/demo.o" "../src/demo.c"
+'Finished building: ../src/demo.c'
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../microblaze_video_4_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:89:2: warning: implicit declaration of function 'draw_line'; did you mean 'draw_pixel'? [-Wimplicit-function-declaration]
+  draw_line(mult_x[mult_option], 210, 0xff);
+  ^~~~~~~~~
+  draw_pixel
+../src/helloworld.c:90:2: warning: implicit declaration of function 'write_number'; did you mean 'is_number'? [-Wimplicit-function-declaration]
+  write_number(mult_x[0], 180, multiplier[0], 0xff);
+  ^~~~~~~~~~~~
+  is_number
+../src/helloworld.c:97:2: warning: implicit declaration of function 'write_ON'; did you mean 'write_O'? [-Wimplicit-function-declaration]
+  write_ON();
+  ^~~~~~~~
+  write_O
+../src/helloworld.c:123:2: warning: implicit declaration of function 'init_WindowEnable' [-Wimplicit-function-declaration]
+  init_WindowEnable();
+  ^~~~~~~~~~~~~~~~~
+../src/helloworld.c:358:9: warning: unused variable 'huh' [-Wunused-variable]
+     int huh = test[508];
+         ^~~
+../src/helloworld.c:422:6: warning: implicit declaration of function 'write_OFF'; did you mean 'write_O'? [-Wimplicit-function-declaration]
+      write_OFF();
+      ^~~~~~~~~
+      write_O
+../src/helloworld.c:146:7: warning: unused variable 'print_bin' [-Wunused-variable]
+   int print_bin = 6;
+       ^~~~~~~~~
+../src/helloworld.c:112:6: warning: unused variable 'previous_windowVal' [-Wunused-variable]
+  int previous_windowVal = 1;
+      ^~~~~~~~~~~~~~~~~~
+../src/helloworld.c:86:6: warning: unused variable 'previous_mult' [-Wunused-variable]
+  int previous_mult = 0;
+      ^~~~~~~~~~~~~
+../src/helloworld.c:83:6: warning: unused variable 'previous_multiplier' [-Wunused-variable]
+  int previous_multiplier[3] = {0, 0, 0};
+      ^~~~~~~~~~~~~~~~~~~
+../src/helloworld.c:68:6: warning: variable 'bins' set but not used [-Wunused-but-set-variable]
+  u32 bins[10] = {};
+      ^~~~
+../src/helloworld.c:61:6: warning: unused variable 'v_color' [-Wunused-variable]
+  int v_color;
+      ^~~~~~~
+../src/helloworld.c:60:6: warning: unused variable 'v_start_y' [-Wunused-variable]
+  int v_start_y;
+      ^~~~~~~~~
+../src/helloworld.c:59:6: warning: unused variable 'v_start_x' [-Wunused-variable]
+  int v_start_x;
+      ^~~~~~~~~
+../src/helloworld.c:34:15: warning: unused variable 'mic_bit' [-Wunused-variable]
+  unsigned int mic_bit;
+               ^~~~~~~
+../src/helloworld.c: At top level:
+../src/helloworld.c:794:6: warning: conflicting types for 'init_WindowEnable'
+ void init_WindowEnable()
+      ^~~~~~~~~~~~~~~~~
+../src/helloworld.c:123:2: note: previous implicit declaration of 'init_WindowEnable' was here
+  init_WindowEnable();
+  ^~~~~~~~~~~~~~~~~
+../src/helloworld.c: In function 'is_number':
+../src/helloworld.c:816:5: warning: type of 'x' defaults to 'int' [-Wimplicit-int]
+ int is_number(x)
+     ^~~~~~~~~
+../src/helloworld.c: At top level:
+../src/helloworld.c:824:6: warning: conflicting types for 'write_ON'
+ void write_ON()
+      ^~~~~~~~
+../src/helloworld.c:97:2: note: previous implicit declaration of 'write_ON' was here
+  write_ON();
+  ^~~~~~~~
+../src/helloworld.c:851:6: warning: conflicting types for 'write_OFF'
+ void write_OFF()
+      ^~~~~~~~~
+../src/helloworld.c:422:6: note: previous implicit declaration of 'write_OFF' was here
+      write_OFF();
+      ^~~~~~~~~
+../src/helloworld.c:880:6: warning: conflicting types for 'draw_line'
+ void draw_line(int start_x, int start_y, int color)
+      ^~~~~~~~~
+../src/helloworld.c:89:2: note: previous implicit declaration of 'draw_line' was here
+  draw_line(mult_x[mult_option], 210, 0xff);
+  ^~~~~~~~~
+../src/helloworld.c:1187:6: warning: conflicting types for 'write_number'
+ void write_number(int start_x, int start_y, int number, int color)
+      ^~~~~~~~~~~~
+../src/helloworld.c:90:2: note: previous implicit declaration of 'write_number' was here
+  write_number(mult_x[0], 180, multiplier[0], 0xff);
+  ^~~~~~~~~~~~
+'Finished building: ../src/helloworld.c'
+' '
+'Building file: ../src/iic.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/iic.o" -I../../microblaze_video_4_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/iic.d" -MT"src/iic.o" -o "src/iic.o" "../src/iic.c"
+'Finished building: ../src/iic.c'
+' '
+'Building file: ../src/platform.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/platform.o" -I../../microblaze_video_4_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/platform.d" -MT"src/platform.o" -o "src/platform.o" "../src/platform.c"
+'Finished building: ../src/platform.c'
+' '
+'Building target: microblaze_video_4.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../microblaze_video_4_bsp/microblaze_0/lib -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "microblaze_video_4.elf"  ./src/audio.o ./src/demo.o ./src/helloworld.o ./src/iic.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: microblaze_video_4.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size microblaze_video_4.elf  |tee "microblaze_video_4.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  42320	    352	   3208	  45880	   b338	microblaze_video_4.elf
+'Finished building: microblaze_video_4.elf.size'
+' '
+
+22:12:53 Build Finished (took 1s.417ms)
+

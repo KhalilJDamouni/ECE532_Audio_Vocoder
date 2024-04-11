@@ -1,0 +1,39 @@
+verilog xil_defaultlib --include "../../../../audio_vocoder.srcs/sources_1/bd/design_1/ipshared/85a3" --include "../../../../audio_vocoder.srcs/sources_1/bd/design_1/ipshared/ec67/hdl" --include "../../../../audio_vocoder.srcs/sources_1/bd/design_1/ipshared/1b7e/hdl/verilog" --include "../../../../audio_vocoder.srcs/sources_1/bd/design_1/ipshared/122e/hdl/verilog" --include "../../../../audio_vocoder.srcs/sources_1/bd/design_1/ipshared/7d3c/hdl/verilog" --include "../../../../audio_vocoder.srcs/sources_1/bd/design_1/ipshared/c45e/hdl/verilog" \
+"../../../bd/design_1/ip/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0_clk_wiz.v" \
+"../../../bd/design_1/ip/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0.v" \
+"../../../bd/design_1/ip/design_1_i2s_rx_tx_0_0/src/oddr_0/sim/oddr_0.v" \
+"../../../bd/design_1/ipshared/b137/src/i2s_ctrl.v" \
+"../../../bd/design_1/ipshared/b137/src/i2s_rx_tx.v" \
+"../../../bd/design_1/ip/design_1_i2s_rx_tx_0_0/sim/design_1_i2s_rx_tx_0_0.v" \
+"../../../bd/design_1/sim/design_1.v" \
+
+sv xil_defaultlib --include "../../../../audio_vocoder.srcs/sources_1/bd/design_1/ipshared/85a3" --include "../../../../audio_vocoder.srcs/sources_1/bd/design_1/ipshared/ec67/hdl" --include "../../../../audio_vocoder.srcs/sources_1/bd/design_1/ipshared/1b7e/hdl/verilog" --include "../../../../audio_vocoder.srcs/sources_1/bd/design_1/ipshared/122e/hdl/verilog" --include "../../../../audio_vocoder.srcs/sources_1/bd/design_1/ipshared/7d3c/hdl/verilog" --include "../../../../audio_vocoder.srcs/sources_1/bd/design_1/ipshared/c45e/hdl/verilog" \
+"../../../bd/design_1/ipshared/e47f/fwdFFT.sv" \
+"../../../bd/design_1/ip/design_1_fwdFFT_0_0/sim/design_1_fwdFFT_0_0.sv" \
+"../../../bd/design_1/ipshared/20c2/invFFT.sv" \
+"../../../bd/design_1/ip/design_1_invFFT_0_0/sim/design_1_invFFT_0_0.sv" \
+"../../../bd/design_1/ipshared/84e1/dataPath.sv" \
+"../../../bd/design_1/ip/design_1_dataPath_0_0/sim/design_1_dataPath_0_0.sv" \
+
+verilog xil_defaultlib --include "../../../../audio_vocoder.srcs/sources_1/bd/design_1/ipshared/85a3" --include "../../../../audio_vocoder.srcs/sources_1/bd/design_1/ipshared/ec67/hdl" --include "../../../../audio_vocoder.srcs/sources_1/bd/design_1/ipshared/1b7e/hdl/verilog" --include "../../../../audio_vocoder.srcs/sources_1/bd/design_1/ipshared/122e/hdl/verilog" --include "../../../../audio_vocoder.srcs/sources_1/bd/design_1/ipshared/7d3c/hdl/verilog" --include "../../../../audio_vocoder.srcs/sources_1/bd/design_1/ipshared/c45e/hdl/verilog" \
+"../../../bd/design_1/ip/design_1_axi_bram_ctrl_0_bram_1/sim/design_1_axi_bram_ctrl_0_bram_1.v" \
+"../../../bd/design_1/ip/design_1_clk_wiz_1_1/design_1_clk_wiz_1_1_clk_wiz.v" \
+"../../../bd/design_1/ip/design_1_clk_wiz_1_1/design_1_clk_wiz_1_1.v" \
+"../../../bd/design_1/ip/design_1_xbar_1/sim/design_1_xbar_1.v" \
+"../../../bd/design_1/ip/design_1_lmb_bram_1/sim/design_1_lmb_bram_1.v" \
+"../../../bd/design_1/ip/design_1_microblaze_0_xlconcat_1/sim/design_1_microblaze_0_xlconcat_1.v" \
+"../../../bd/design_1/ip/design_1_uart_reader_0_1/sim/design_1_uart_reader_0_1.v" \
+"../../../bd/design_1/ip/design_1_vga_driver_0_upgraded_ipi_1/sim/design_1_vga_driver_0_upgraded_ipi_1.v" \
+"../../../bd/design_1/ip/design_1_axi_child_v1_0_S00_A_0_0/sim/design_1_axi_child_v1_0_S00_A_0_0.v" \
+"../../../bd/design_1/ip/design_1_fft_output_format_0_0/sim/design_1_fft_output_format_0_0.v" \
+"../../../bd/design_1/ip/design_1_xlconstant_0_1/sim/design_1_xlconstant_0_1.v" \
+"../../../bd/design_1/ip/design_1_xlconstant_1_0/sim/design_1_xlconstant_1_0.v" \
+"../../../bd/design_1/ipshared/5db6/filterBP13.v" \
+"../../../bd/design_1/ip/design_1_filterBP_0_0/sim/design_1_filterBP_0_0.v" \
+"../../../bd/design_1/ip/design_1_audio_mux_0_0/sim/design_1_audio_mux_0_0.v" \
+"../../../bd/design_1/ip/design_1_ila_0_0/sim/design_1_ila_0_0.v" \
+"../../../bd/design_1/ip/design_1_auto_pc_0/sim/design_1_auto_pc_0.v" \
+
+verilog xil_defaultlib "glbl.v"
+
+nosort

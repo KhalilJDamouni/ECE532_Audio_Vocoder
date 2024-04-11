@@ -1,0 +1,78 @@
+{
+   "ExpandedHierarchyInLayout":"",
+   "guistr":"# # String gsaved with Nlview 6.8.11  2018-08-07 bk=1.4403 VDI=40 GEI=35 GUI=JA:9.0 non-TLS
+#  -string -flagsOSRD
+preplace port RX -pg 1 -y 1330 -defaultsOSRD
+preplace port iic_rtl -pg 1 -y 820 -defaultsOSRD
+preplace port sys_clock_0 -pg 1 -y 1030 -defaultsOSRD
+preplace port VGA_VS -pg 1 -y 440 -defaultsOSRD
+preplace port usb_uart -pg 1 -y 670 -defaultsOSRD
+preplace port VGA_HS -pg 1 -y 420 -defaultsOSRD
+preplace port reset -pg 1 -y 950 -defaultsOSRD
+preplace portBus VGA_B -pg 1 -y 400 -defaultsOSRD
+preplace portBus VGA_R -pg 1 -y 360 -defaultsOSRD
+preplace portBus LED -pg 1 -y 1170 -defaultsOSRD
+preplace portBus VGA_G -pg 1 -y 380 -defaultsOSRD
+preplace inst vga_driver_0_upgraded_ipi -pg 1 -lvl 6 -y 460 -defaultsOSRD
+preplace inst axi_iic_0 -pg 1 -lvl 6 -y 840 -defaultsOSRD
+preplace inst axi_bram_ctrl_0_bram -pg 1 -lvl 7 -y 190 -defaultsOSRD
+preplace inst microblaze_0_axi_periph -pg 1 -lvl 5 -y 680 -defaultsOSRD
+preplace inst microblaze_0_xlconcat -pg 1 -lvl 2 -y 950 -defaultsOSRD
+preplace inst uart_reader_0 -pg 1 -lvl 6 -y 1250 -defaultsOSRD
+preplace inst microblaze_0_axi_intc -pg 1 -lvl 3 -y 1030 -defaultsOSRD
+preplace inst mdm_1 -pg 1 -lvl 3 -y 1250 -defaultsOSRD
+preplace inst axi_child_4_0 -pg 1 -lvl 6 -y 1050 -defaultsOSRD
+preplace inst microblaze_0 -pg 1 -lvl 4 -y 1060 -defaultsOSRD
+preplace inst axi_uartlite_0 -pg 1 -lvl 6 -y 680 -defaultsOSRD
+preplace inst rst_clk_wiz_1_100M -pg 1 -lvl 2 -y 1190 -defaultsOSRD
+preplace inst microblaze_0_local_memory -pg 1 -lvl 5 -y 1070 -defaultsOSRD
+preplace inst clk_wiz_1 -pg 1 -lvl 1 -y 1020 -defaultsOSRD
+preplace inst axi_bram_ctrl_0 -pg 1 -lvl 6 -y 180 -defaultsOSRD
+preplace netloc axi_bram_ctrl_0_bram_clk_a 1 6 1 2220
+preplace netloc axi_bram_ctrl_0_bram_addr_a 1 6 1 2210
+preplace netloc microblaze_0_axi_periph_M04_AXI 1 5 1 1720
+preplace netloc vga_driver_0_upgraded_ipi_BRAM_PORTB_0_clk 1 6 1 2280
+preplace netloc vga_driver_0_bram_en 1 6 1 2310
+preplace netloc vga_driver_0_VGA_B 1 6 2 NJ 400 NJ
+preplace netloc microblaze_0_intr 1 2 1 600
+preplace netloc axi_uartlite_0_interrupt 1 1 6 240 880 NJ 880 NJ 880 NJ 880 1730J 760 2260
+preplace netloc axi_iic_0_iic2intc_irpt 1 1 6 230 870 NJ 870 NJ 870 1370J 890 1690J 920 2260
+preplace netloc RX_1 1 0 6 NJ 1330 NJ 1330 610J 1180 NJ 1180 1360J 1240 NJ
+preplace netloc microblaze_0_Clk 1 1 5 210 1020 580 1140 870 1150 1360 470 1710
+preplace netloc microblaze_0_interrupt 1 3 1 N
+preplace netloc microblaze_0_intc_axi 1 2 4 610 900 NJ 900 NJ 900 1680
+preplace netloc microblaze_0_axi_periph_M03_AXI 1 5 1 1700
+preplace netloc vga_driver_0_upgraded_ipi_VGA_R 1 6 2 2220J 390 2580J
+preplace netloc vga_driver_0_upgraded_ipi_BRAM_PORTB_0_din 1 6 1 2300
+preplace netloc microblaze_0_ilmb_1 1 4 1 N
+preplace netloc microblaze_0_axi_dp 1 4 1 1350
+preplace netloc vga_driver_0_VGA_G 1 6 2 NJ 380 NJ
+preplace netloc uart_reader_0_number_wire 1 5 3 1760 1170 2290 1170 NJ
+preplace netloc rst_clk_wiz_1_100M_bus_struct_reset 1 2 3 NJ 1170 NJ 1170 1370
+preplace netloc microblaze_0_axi_periph_M01_AXI 1 5 1 N
+preplace netloc vga_driver_0_bram_address 1 6 1 2270
+preplace netloc rst_clk_wiz_1_100M_peripheral_aresetn 1 2 4 590 820 NJ 820 1370 480 1740
+preplace netloc rst_clk_wiz_1_100M_mb_reset 1 2 2 610 1150 860J
+preplace netloc clk_wiz_1_locked 1 1 1 200
+preplace netloc axi_bram_ctrl_0_bram_wrdata_a 1 6 1 2230
+preplace netloc axi_uartlite_0_UART 1 6 2 NJ 670 NJ
+preplace netloc axi_iic_0_IIC 1 6 2 NJ 820 NJ
+preplace netloc vga_driver_0_bram_we 1 6 1 2320
+preplace netloc vga_driver_0_VGA_VS 1 6 2 NJ 440 NJ
+preplace netloc axi_iic_0_gpo 1 5 2 1760 930 2220
+preplace netloc axi_bram_ctrl_0_bram_we_a 1 6 1 2260
+preplace netloc microblaze_0_dlmb_1 1 4 1 N
+preplace netloc microblaze_0_axi_periph_M02_AXI 1 5 1 1700
+preplace netloc sys_clock_0_1 1 0 6 20 440 NJ 440 NJ 440 NJ 440 NJ 440 N
+preplace netloc microblaze_0_debug 1 3 1 850
+preplace netloc vga_driver_0_VGA_HS 1 6 2 NJ 420 NJ
+preplace netloc reset_1 1 0 6 10 950 220 460 NJ 460 NJ 460 NJ 460 NJ
+preplace netloc mdm_1_debug_sys_rst 1 1 3 240 1320 NJ 1320 860
+preplace netloc axi_bram_ctrl_0_bram_en_a 1 6 1 2250
+preplace netloc axi_bram_ctrl_0_bram_douta 1 6 1 2240
+preplace netloc uart_reader_0_value 1 5 2 1750 1180 2260
+preplace netloc axi_bram_ctrl_0_bram_doutb 1 5 2 1760 300 2290
+levelinfo -pg 1 -10 110 410 730 1110 1530 1990 2450 2610 -top 0 -bot 1350
+"
+}
+

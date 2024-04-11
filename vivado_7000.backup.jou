@@ -1,0 +1,38 @@
+#-----------------------------------------------------------
+# Vivado v2018.3.1 (64-bit)
+# SW Build 2489853 on Tue Mar 26 04:20:25 MDT 2019
+# IP Build 2486929 on Tue Mar 26 06:44:21 MDT 2019
+# Start of session at: Sat Mar 30 20:18:55 2024
+# Process ID: 7000
+# Current directory: C:/Users/damounik/ECE532/March26_2/audio_vocoder_W1/audio_vocoder_W1
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent3392 C:\Users\damounik\ECE532\March26_2\audio_vocoder_W1\audio_vocoder_W1\audio_vocoder.xpr
+# Log file: C:/Users/damounik/ECE532/March26_2/audio_vocoder_W1/audio_vocoder_W1/vivado.log
+# Journal file: C:/Users/damounik/ECE532/March26_2/audio_vocoder_W1/audio_vocoder_W1\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/damounik/ECE532/March26_2/audio_vocoder_W1/audio_vocoder_W1/audio_vocoder.xpr
+update_compile_order -fileset sources_1
+open_bd_design {C:/Users/damounik/ECE532/March26_2/audio_vocoder_W1/audio_vocoder_W1/audio_vocoder.srcs/sources_1/bd/design_1/design_1.bd}
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 12
+wait_on_run impl_1
+launch_sdk -workspace C:/Users/damounik/ECE532/March26_2/audio_vocoder_W1/audio_vocoder_W1/audio_vocoder.sdk -hwspec C:/Users/damounik/ECE532/March26_2/audio_vocoder_W1/audio_vocoder_W1/audio_vocoder.sdk/design_1_wrapper.hdf
+reset_run synth_1
+launch_runs synth_1 -jobs 12
+wait_on_run synth_1
+disconnect_bd_net /sys_clock_0_1 [get_bd_pins vga_driver_0_upgraded_ipi/CLK100MHZ]
+connect_bd_net [get_bd_pins clk_wiz_1/clk_out1] [get_bd_pins vga_driver_0_upgraded_ipi/CLK100MHZ]
+save_bd_design
+reset_run synth_1
+launch_runs synth_1 -jobs 12
+wait_on_run synth_1
+launch_runs impl_1 -jobs 12
+wait_on_run impl_1
+launch_runs impl_1 -to_step write_bitstream -jobs 12
+wait_on_run impl_1
+open_hw
+open_bd_design {C:/Users/damounik/ECE532/March26_2/audio_vocoder_W1/audio_vocoder_W1/audio_vocoder.srcs/sources_1/bd/design_1/design_1.bd}
+file copy -force C:/Users/damounik/ECE532/March26_2/audio_vocoder_W1/audio_vocoder_W1/audio_vocoder.runs/impl_1/design_1_wrapper.sysdef C:/Users/damounik/ECE532/March26_2/audio_vocoder_W1/audio_vocoder_W1/audio_vocoder.sdk/design_1_wrapper.hdf
+
+launch_sdk -workspace C:/Users/damounik/ECE532/March26_2/audio_vocoder_W1/audio_vocoder_W1/audio_vocoder.sdk -hwspec C:/Users/damounik/ECE532/March26_2/audio_vocoder_W1/audio_vocoder_W1/audio_vocoder.sdk/design_1_wrapper.hdf
+update_module_reference design_1_axi_child_v1_0_S00_A_0_0

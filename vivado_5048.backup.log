@@ -1,0 +1,367 @@
+#-----------------------------------------------------------
+# Vivado v2018.3.1 (64-bit)
+# SW Build 2489853 on Tue Mar 26 04:20:25 MDT 2019
+# IP Build 2486929 on Tue Mar 26 06:44:21 MDT 2019
+# Start of session at: Tue Apr  2 19:58:17 2024
+# Process ID: 5048
+# Current directory: C:/Users/terefeil/audio_vocoder_W1
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent11632 C:\Users\terefeil\audio_vocoder_W1\audio_vocoder.xpr
+# Log file: C:/Users/terefeil/audio_vocoder_W1/vivado.log
+# Journal file: C:/Users/terefeil/audio_vocoder_W1\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/terefeil/audio_vocoder_W1/audio_vocoder.xpr
+INFO: [Project 1-313] Project file moved from 'C:/Users/damounik/March31/OneWereWorkingOn/audio_vocoder_W1/audio_vocoder_W1' since last save.
+CRITICAL WARNING: [Project 1-311] Could not find the file 'C:/ECE532/March26_2/final_video_board/final_video_board.srcs/sources_1/bd/audio_vocoder/audio_vocoder.bd', nor could it be found using path 'C:/Users/damounik/March31/ECE532/March26_2/final_video_board/final_video_board.srcs/sources_1/bd/audio_vocoder/audio_vocoder.bd'.
+CRITICAL WARNING: [Project 1-311] Could not find the file 'C:/ECE532/March26_2/final_video_board/final_video_board.srcs/sources_1/bd/audio_vocoder/hdl/audio_vocoder_wrapper.v', nor could it be found using path 'C:/Users/damounik/March31/ECE532/March26_2/final_video_board/final_video_board.srcs/sources_1/bd/audio_vocoder/hdl/audio_vocoder_wrapper.v'.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/terefeil/audio_vocoder_W1/firFilterBP'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/terefeil/audio_vocoder_W1/ifft_interface_ip'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/terefeil/audio_vocoder_W1/fft_interface_ip'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/terefeil/audio_vocoder_W1/processing_path_ip'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/terefeil/audio_vocoder_W1/audio_i2s'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/terefeil/audio_vocoder_W1/datapath_ip'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/DESL/Xilinx/Vivado/2018.3/data/ip'.
+WARNING: [BD 41-1663] The design 'audio_vocoder.bd' cannot be modified due to following reason(s):
+* Block design BXML file is read-only. Please check file-permissions. 
+* Block design BD file is read-only. Please check file-permissions. 
+
+WARNING: [Project 1-533] File 'C:/ECE532/March26_2/final_video_board/final_video_board.srcs/sources_1/bd/audio_vocoder/ip/audio_vocoder_rst_clk_wiz_1_100M_0/audio_vocoder_rst_clk_wiz_1_100M_0.xci' could not be found in the subdesign 'C:/ECE532/March26_2/final_video_board/final_video_board.srcs/sources_1/bd/audio_vocoder/audio_vocoder.bd', but fileset 'audio_vocoder_rst_clk_wiz_1_100M_0' still exists. The fileset and corresponding run(s) will be deleted the next time top-level synthesis is run.
+WARNING: [Project 1-533] File 'C:/ECE532/March26_2/final_video_board/final_video_board.srcs/sources_1/bd/audio_vocoder/ip/audio_vocoder_clk_wiz_1_0/audio_vocoder_clk_wiz_1_0.xci' could not be found in the subdesign 'C:/ECE532/March26_2/final_video_board/final_video_board.srcs/sources_1/bd/audio_vocoder/audio_vocoder.bd', but fileset 'audio_vocoder_clk_wiz_1_0' still exists. The fileset and corresponding run(s) will be deleted the next time top-level synthesis is run.
+WARNING: [Project 1-533] File 'C:/ECE532/March26_2/final_video_board/final_video_board.srcs/sources_1/bd/audio_vocoder/ip/audio_vocoder_axi_iic_0_0/audio_vocoder_axi_iic_0_0.xci' could not be found in the subdesign 'C:/ECE532/March26_2/final_video_board/final_video_board.srcs/sources_1/bd/audio_vocoder/audio_vocoder.bd', but fileset 'audio_vocoder_axi_iic_0_0' still exists. The fileset and corresponding run(s) will be deleted the next time top-level synthesis is run.
+WARNING: [Project 1-533] File 'C:/ECE532/March26_2/final_video_board/final_video_board.srcs/sources_1/bd/audio_vocoder/ip/audio_vocoder_axi_uartlite_0_0/audio_vocoder_axi_uartlite_0_0.xci' could not be found in the subdesign 'C:/ECE532/March26_2/final_video_board/final_video_board.srcs/sources_1/bd/audio_vocoder/audio_vocoder.bd', but fileset 'audio_vocoder_axi_uartlite_0_0' still exists. The fileset and corresponding run(s) will be deleted the next time top-level synthesis is run.
+open_project: Time (s): cpu = 00:00:19 ; elapsed = 00:00:11 . Memory (MB): peak = 896.445 ; gain = 268.523
+update_compile_order -fileset sources_1
+exit
+INFO: [Common 17-206] Exiting Vivado at Tue Apr  2 20:15:12 2024...
+rces_1/bd/design_1/design_1.bd}
+Adding cell -- xilinx.com:ip:clk_wiz:6.0 - clk_wiz_0
+Adding cell -- xilinx.com:ip:proc_sys_reset:5.0 - proc_sys_reset_0
+Adding cell -- xilinx.com:ip:xfft:9.1 - xfft_0_FWD
+Adding cell -- xilinx.com:ip:xfft:9.1 - xfft_INV
+Adding cell -- utoronto.ca:user:i2s_rx_tx:1.0 - i2s_rx_tx_0
+Adding cell -- utoronto.ca:user:fwdFFT:1.0 - fwdFFT_0
+Adding cell -- utoronto.ca:user:invFFT:1.0 - invFFT_0
+Adding cell -- xilinx.com:ip:axi_bram_ctrl:4.1 - axi_bram_ctrl_0
+Adding cell -- xilinx.com:ip:blk_mem_gen:8.4 - axi_bram_ctrl_0_bram
+Adding cell -- xilinx.com:ip:axi_iic:2.0 - axi_iic_0
+Adding cell -- xilinx.com:ip:axi_uartlite:2.0 - axi_uartlite_0
+Adding cell -- xilinx.com:ip:clk_wiz:6.0 - clk_wiz_1
+Adding cell -- xilinx.com:ip:mdm:3.2 - mdm_1
+Adding cell -- xilinx.com:ip:microblaze:11.0 - microblaze_0
+Adding cell -- xilinx.com:ip:axi_intc:4.1 - microblaze_0_axi_intc
+Adding cell -- xilinx.com:ip:axi_interconnect:2.1 - microblaze_0_axi_periph
+Adding cell -- xilinx.com:ip:axi_crossbar:2.1 - xbar
+Adding cell -- xilinx.com:ip:axi_protocol_converter:2.1 - auto_pc
+Adding cell -- xilinx.com:ip:lmb_bram_if_cntlr:4.0 - dlmb_bram_if_cntlr
+Adding cell -- xilinx.com:ip:lmb_v10:3.0 - dlmb_v10
+Adding cell -- xilinx.com:ip:lmb_bram_if_cntlr:4.0 - ilmb_bram_if_cntlr
+Adding cell -- xilinx.com:ip:lmb_v10:3.0 - ilmb_v10
+Adding cell -- xilinx.com:ip:blk_mem_gen:8.4 - lmb_bram
+Adding cell -- xilinx.com:ip:xlconcat:2.1 - microblaze_0_xlconcat
+Adding cell -- xilinx.com:ip:proc_sys_reset:5.0 - rst_clk_wiz_1_100M
+Adding cell -- xilinx.com:module_ref:uart_reader:1.0 - uart_reader_0
+Adding cell -- xilinx.com:module_ref:vga_driver:1.0 - vga_driver_0_upgraded_ipi
+Adding cell -- xilinx.com:module_ref:fft_output_format:1.0 - fft_output_format_0
+Adding cell -- xilinx.com:ip:xlconstant:1.1 - xlconstant_0_windowEnable
+Adding cell -- xilinx.com:ip:xlconstant:1.1 - xlconstant_1_filterClkEn
+Adding cell -- utoronto.ca:user:filterBP:1.0 - filterBP_0_postProcessing
+Adding cell -- utoronto.ca:user:dataPath:2.0 - dataPath_0
+Adding cell -- xilinx.com:module_ref:axi_child_v1_0_S00_AXI:1.0 - axi_child_v1_0_S00_A_0
+WARNING: [BD 41-1731] Type mismatch between connected pins: /clk_wiz_0/clk_out1(clk) and /i2s_rx_tx_0/CLK_12(undef)
+WARNING: [BD 41-1731] Type mismatch between connected pins: /clk_wiz_0/clk_out1(clk) and /dataPath_0/clk_12(undef)
+WARNING: [BD 41-1731] Type mismatch between connected pins: /dataPath_0/aclk_48k(undef) and /xfft_0_FWD/aclk(clk)
+WARNING: [BD 41-1731] Type mismatch between connected pins: /dataPath_0/aclk_48k(undef) and /xfft_INV/aclk(clk)
+WARNING: [BD 41-1731] Type mismatch between connected pins: /dataPath_0/aclk_48k(undef) and /fft_output_format_0/clk(clk)
+WARNING: [BD 41-1731] Type mismatch between connected pins: /dataPath_0/aclk_48k(undef) and /filterBP_0_postProcessing/clk(clk)
+WARNING: [BD 41-1731] Type mismatch between connected pins: /clk_wiz_1/clk_out1(clk) and /uart_reader_0/CLK100MHZ(undef)
+WARNING: [BD 41-1731] Type mismatch between connected pins: /clk_wiz_1/clk_out1(clk) and /vga_driver_0_upgraded_ipi/CLK100MHZ(undef)
+Successfully read diagram <design_1> from BD file <C:/Users/terefeil/audio_vocoder_W1/audio_vocoder.srcs/sources_1/bd/design_1/design_1.bd>
+copy_bd_objs /  [get_bd_cells {xfft_INV fwdFFT_0 xfft_0_FWD invFFT_0 dataPath_0}]
+copy_bd_objs: Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 1276.902 ; gain = 0.000
+startgroup
+set_property location {3 1309 -323} [get_bd_cells xfft_0_FWD1]
+set_property location {3 1289 -1013} [get_bd_cells fwdFFT_1]
+set_property location {3 1289 -793} [get_bd_cells invFFT_1]
+set_property location {3 1289 -563} [get_bd_cells xfft_INV1]
+set_property location {3 1289 -93} [get_bd_cells dataPath_1]
+endgroup
+set_property location {2 674 -257} [get_bd_cells xfft_0_FWD1]
+set_property location {2 637 -551} [get_bd_cells xfft_INV1]
+set_property location {2 519 -90} [get_bd_cells xfft_0_FWD1]
+set_property location {2 554 -412} [get_bd_cells xfft_INV1]
+set_property location {2 535 -3} [get_bd_cells xfft_0_FWD1]
+set_property location {2 535 -272} [get_bd_cells xfft_INV1]
+set_property location {3 1199 21} [get_bd_cells dataPath_1]
+set_property location {3 1184 -516} [get_bd_cells invFFT_1]
+undo
+INFO: [Common 17-17] undo 'set_property location {3 1184 -516} [get_bd_cells invFFT_1]'
+undo
+INFO: [Common 17-17] undo 'set_property location {3 1199 21} [get_bd_cells dataPath_1]'
+undo
+INFO: [Common 17-17] undo 'set_property location {2 535 -272} [get_bd_cells xfft_INV1]'
+undo
+INFO: [Common 17-17] undo 'set_property location {2 535 -3} [get_bd_cells xfft_0_FWD1]'
+undo
+INFO: [Common 17-17] undo 'set_property location {2 554 -412} [get_bd_cells xfft_INV1]'
+undo
+INFO: [Common 17-17] undo 'set_property location {2 519 -90} [get_bd_cells xfft_0_FWD1]'
+undo
+INFO: [Common 17-17] undo 'set_property location {2 637 -551} [get_bd_cells xfft_INV1]'
+undo
+INFO: [Common 17-17] undo 'set_property location {2 674 -257} [get_bd_cells xfft_0_FWD1]'
+undo
+INFO: [Common 17-17] undo 'endgroup'
+INFO: [Common 17-17] undo 'set_property location {3 1289 -93} [get_bd_cells dataPath_1]'
+INFO: [Common 17-17] undo 'set_property location {3 1289 -563} [get_bd_cells xfft_INV1]'
+INFO: [Common 17-17] undo 'set_property location {3 1289 -793} [get_bd_cells invFFT_1]'
+INFO: [Common 17-17] undo 'set_property location {3 1289 -1013} [get_bd_cells fwdFFT_1]'
+INFO: [Common 17-17] undo 'set_property location {3 1309 -323} [get_bd_cells xfft_0_FWD1]'
+INFO: [Common 17-17] undo 'startgroup'
+undo
+INFO: [Common 17-17] undo 'copy_bd_objs /  [get_bd_cells {xfft_INV fwdFFT_0 xfft_0_FWD invFFT_0 dataPath_0}]'
+regenerate_bd_layout
+copy_bd_objs /  [get_bd_cells {xfft_INV xfft_0_FWD fwdFFT_0 dataPath_0 invFFT_0}]
+copy_bd_objs: Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 1276.902 ; gain = 0.000
+set_property location {4 1400 -399} [get_bd_cells xfft_INV1]
+set_property location {4 1504 -126} [get_bd_cells dataPath_1]
+undo
+INFO: [Common 17-17] undo 'set_property location {4 1504 -126} [get_bd_cells dataPath_1]'
+undo
+INFO: [Common 17-17] undo 'set_property location {4 1400 -399} [get_bd_cells xfft_INV1]'
+undo
+INFO: [Common 17-17] undo 'copy_bd_objs /  [get_bd_cells {xfft_INV xfft_0_FWD fwdFFT_0 dataPath_0 invFFT_0}]'
+undo
+INFO: [Common 17-17] undo 'regenerate_bd_layout'
+regenerate_bd_layout
+copy_bd_objs /  [get_bd_cells {xfft_INV xfft_0_FWD fwdFFT_0 invFFT_0 dataPath_0}] [get_bd_nets {invFFT_0_mIFFTSValid dataPath_0_ifftIn xfft_0_m_axis_data_tlast dataPath_0_fftIn invFFT_0_dataOut invFFT_0_configData_IFFT xfft_0_m_axis_data_tvalid xfft_INV_s_axis_data_tready fwdFFT_0_configValidFFT invFFT_0_sIFFTMReady fwdFFT_0_dataOut xfft_0_s_axis_config_tready xfft_0_m_axis_data_tdata xfft_INV_s_axis_config_tready xfft_INV_m_axis_data_tvalid fwdFFT_0_configDataFFT invFFT_0_mIFFTSData fwdFFT_0_mFFTSLast xfft_INV_m_axis_data_tdata xfft_0_s_axis_data_tready processingPath_0_axi_clk fwdFFT_0_mFFTSValid fwdFFT_0_mFFTSData fwdFFT_0_sFFTMReady xfft_INV_m_axis_data_tlast invFFT_0_configValid_IFFT invFFT_0_mIFFTSLast}]
+WARNING: [BD 41-1306] The connection to interface pin /xfft_0_FWD1/s_axis_config_tdata is being overridden by the user. This pin will not be connected as a part of interface connection S_AXIS_CONFIG
+WARNING: [BD 41-1306] The connection to interface pin /xfft_0_FWD1/s_axis_config_tvalid is being overridden by the user. This pin will not be connected as a part of interface connection S_AXIS_CONFIG
+WARNING: [BD 41-1306] The connection to interface pin /xfft_0_FWD1/s_axis_data_tdata is being overridden by the user. This pin will not be connected as a part of interface connection S_AXIS_DATA
+WARNING: [BD 41-1306] The connection to interface pin /xfft_0_FWD1/s_axis_data_tlast is being overridden by the user. This pin will not be connected as a part of interface connection S_AXIS_DATA
+WARNING: [BD 41-1306] The connection to interface pin /xfft_0_FWD1/s_axis_data_tvalid is being overridden by the user. This pin will not be connected as a part of interface connection S_AXIS_DATA
+WARNING: [BD 41-1306] The connection to interface pin /xfft_0_FWD1/m_axis_data_tready is being overridden by the user. This pin will not be connected as a part of interface connection M_AXIS_DATA
+WARNING: [BD 41-1306] The connection to interface pin /xfft_INV1/s_axis_config_tdata is being overridden by the user. This pin will not be connected as a part of interface connection S_AXIS_CONFIG
+WARNING: [BD 41-1306] The connection to interface pin /xfft_INV1/s_axis_config_tvalid is being overridden by the user. This pin will not be connected as a part of interface connection S_AXIS_CONFIG
+WARNING: [BD 41-1306] The connection to interface pin /xfft_INV1/s_axis_data_tdata is being overridden by the user. This pin will not be connected as a part of interface connection S_AXIS_DATA
+WARNING: [BD 41-1306] The connection to interface pin /xfft_INV1/s_axis_data_tlast is being overridden by the user. This pin will not be connected as a part of interface connection S_AXIS_DATA
+WARNING: [BD 41-1306] The connection to interface pin /xfft_INV1/s_axis_data_tvalid is being overridden by the user. This pin will not be connected as a part of interface connection S_AXIS_DATA
+WARNING: [BD 41-1306] The connection to interface pin /xfft_INV1/m_axis_data_tready is being overridden by the user. This pin will not be connected as a part of interface connection M_AXIS_DATA
+WARNING: [BD 41-1731] Type mismatch between connected pins: /dataPath_1/aclk_48k(undef) and /xfft_0_FWD1/aclk(clk)
+WARNING: [BD 41-1731] Type mismatch between connected pins: /dataPath_1/aclk_48k(undef) and /xfft_INV1/aclk(clk)
+WARNING: [BD 41-1306] The connection to interface pin /xfft_0_FWD1/m_axis_data_tdata is being overridden by the user. This pin will not be connected as a part of interface connection M_AXIS_DATA
+WARNING: [BD 41-1306] The connection to interface pin /xfft_0_FWD1/m_axis_data_tlast is being overridden by the user. This pin will not be connected as a part of interface connection M_AXIS_DATA
+WARNING: [BD 41-1306] The connection to interface pin /xfft_0_FWD1/m_axis_data_tvalid is being overridden by the user. This pin will not be connected as a part of interface connection M_AXIS_DATA
+WARNING: [BD 41-1306] The connection to interface pin /xfft_0_FWD1/s_axis_config_tready is being overridden by the user. This pin will not be connected as a part of interface connection S_AXIS_CONFIG
+WARNING: [BD 41-1306] The connection to interface pin /xfft_0_FWD1/s_axis_data_tready is being overridden by the user. This pin will not be connected as a part of interface connection S_AXIS_DATA
+WARNING: [BD 41-1306] The connection to interface pin /xfft_INV1/m_axis_data_tdata is being overridden by the user. This pin will not be connected as a part of interface connection M_AXIS_DATA
+WARNING: [BD 41-1306] The connection to interface pin /xfft_INV1/m_axis_data_tlast is being overridden by the user. This pin will not be connected as a part of interface connection M_AXIS_DATA
+WARNING: [BD 41-1306] The connection to interface pin /xfft_INV1/m_axis_data_tvalid is being overridden by the user. This pin will not be connected as a part of interface connection M_AXIS_DATA
+WARNING: [BD 41-1306] The connection to interface pin /xfft_INV1/s_axis_config_tready is being overridden by the user. This pin will not be connected as a part of interface connection S_AXIS_CONFIG
+WARNING: [BD 41-1306] The connection to interface pin /xfft_INV1/s_axis_data_tready is being overridden by the user. This pin will not be connected as a part of interface connection S_AXIS_DATA
+copy_bd_objs: Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 1320.496 ; gain = 43.594
+startgroup
+set_property location {4 961 -1113} [get_bd_cells xfft_0_FWD1]
+set_property location {4 961 -1383} [get_bd_cells invFFT_1]
+set_property location {4 961 -793} [get_bd_cells xfft_INV1]
+set_property location {4 961 -523} [get_bd_cells dataPath_1]
+set_property location {4 961 -1603} [get_bd_cells fwdFFT_1]
+endgroup
+connect_bd_net [get_bd_pins dataPath_1/processingVal] [get_bd_pins axi_child_v1_0_S00_A_0/multiplier]
+connect_bd_net [get_bd_pins dataPath_1/windowVal] [get_bd_pins axi_child_v1_0_S00_A_0/windowVal]
+connect_bd_net [get_bd_pins dataPath_1/windowFreqEn] [get_bd_pins axi_child_v1_0_S00_A_0/windowEnable]
+disconnect_bd_net /processingPath_0_axi_clk1 [get_bd_pins dataPath_1/aclk_48k]
+connect_bd_net [get_bd_pins xfft_INV1/aclk] [get_bd_pins dataPath_0/aclk_48k]
+WARNING: [BD 41-1731] Type mismatch between connected pins: /dataPath_0/aclk_48k(undef) and /xfft_0_FWD1/aclk(clk)
+WARNING: [BD 41-1731] Type mismatch between connected pins: /dataPath_0/aclk_48k(undef) and /xfft_INV1/aclk(clk)
+connect_bd_net [get_bd_pins dataPath_1/clk_12] [get_bd_pins clk_wiz_0/clk_out1]
+WARNING: [BD 41-1731] Type mismatch between connected pins: /clk_wiz_0/clk_out1(clk) and /dataPath_1/clk_12(undef)
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:ip:c_addsub:12.0 c_addsub_0
+endgroup
+set_property -dict [list CONFIG.A_Width.VALUE_SRC USER CONFIG.B_Width.VALUE_SRC USER] [get_bd_cells c_addsub_0]
+set_property -dict [list CONFIG.A_Width {24} CONFIG.B_Width {24} CONFIG.CE {false} CONFIG.Out_Width {24} CONFIG.Latency {1} CONFIG.B_Value {000000000000000000000000}] [get_bd_cells c_addsub_0]
+connect_bd_net [get_bd_pins c_addsub_0/CLK] [get_bd_pins dataPath_0/aclk_48k]
+WARNING: [BD 41-1731] Type mismatch between connected pins: /dataPath_0/aclk_48k(undef) and /c_addsub_0/CLK(clk)
+connect_bd_net [get_bd_pins dataPath_1/audiodataOut] [get_bd_pins c_addsub_0/B]
+delete_bd_objs [get_bd_nets dataPath_0_audiodataOut]
+connect_bd_net [get_bd_pins c_addsub_0/A] [get_bd_pins dataPath_0/audiodataOut]
+connect_bd_net [get_bd_pins c_addsub_0/S] [get_bd_pins filterBP_0_postProcessing/filter_in]
+save_bd_design
+Wrote  : <C:\Users\terefeil\audio_vocoder_W1\audio_vocoder.srcs\sources_1\bd\design_1\design_1.bd> 
+Wrote  : <C:/Users/terefeil/audio_vocoder_W1/audio_vocoder.srcs/sources_1/bd/design_1/ui/bd_1f5defd0.ui> 
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:ip:fifo_generator:13.2 fifo_generator_0
+INFO: [xilinx.com:ip:fifo_generator:13.2-5968] /fifo_generator_0Executing the post_config_ip from bd
+endgroup
+set_property location {3 266 -603} [get_bd_cells fifo_generator_0]
+connect_bd_net [get_bd_pins fifo_generator_0/clk] [get_bd_pins dataPath_0/aclk_48k]
+WARNING: [BD 41-1731] Type mismatch between connected pins: /dataPath_0/aclk_48k(undef) and /fifo_generator_0/clk(clk)
+connect_bd_net [get_bd_pins fifo_generator_0/srst] [get_bd_pins proc_sys_reset_0/peripheral_aresetn]
+WARNING: [BD 41-1731] Type mismatch between connected pins: /proc_sys_reset_0/peripheral_aresetn(rst) and /fifo_generator_0/srst(undef)
+save_bd_design
+Wrote  : <C:\Users\terefeil\audio_vocoder_W1\audio_vocoder.srcs\sources_1\bd\design_1\design_1.bd> 
+Wrote  : <C:/Users/terefeil/audio_vocoder_W1/audio_vocoder.srcs/sources_1/bd/design_1/ui/bd_1f5defd0.ui> 
+INFO: [Vivado 12-4158] Exported Hardware file is out of date. Exported hardware information may be inconsistent with respect to the current state of the design. It is recommended that you re-export the design and launch SDK otherwise SDK is launched with out of date hardware system file.
+launch_sdk -workspace C:/Users/terefeil/audio_vocoder_W1/audio_vocoder.sdk -hwspec C:/Users/terefeil/audio_vocoder_W1/audio_vocoder.sdk/design_1_wrapper.hdf
+INFO: [Vivado 12-393] Launching SDK...
+INFO: [Vivado 12-417] Running xsdk -workspace C:/Users/terefeil/audio_vocoder_W1/audio_vocoder.sdk -hwspec C:/Users/terefeil/audio_vocoder_W1/audio_vocoder.sdk/design_1_wrapper.hdf
+INFO: [Vivado 12-3157] SDK launch initiated. Please check console for any further messages.
+close [ open C:/Users/terefeil/audio_vocoder_W1/audio_vocoder.srcs/sources_1/new/fifo_ctrl.v w ]
+add_files C:/Users/terefeil/audio_vocoder_W1/audio_vocoder.srcs/sources_1/new/fifo_ctrl.v
+update_compile_order -fileset sources_1
+create_bd_cell -type module -reference audio_mux audio_mux_0
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/terefeil/audio_vocoder_W1/firFilterBP'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/terefeil/audio_vocoder_W1/ifft_interface_ip'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/terefeil/audio_vocoder_W1/fft_interface_ip'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/terefeil/audio_vocoder_W1/processing_path_ip'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/terefeil/audio_vocoder_W1/audio_i2s'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/terefeil/audio_vocoder_W1/datapath_ip'.
+set_property location {3 190 -796} [get_bd_cells audio_mux_0]
+delete_bd_objs [get_bd_cells audio_mux_0]
+create_bd_cell -type module -reference fifo_ctrl fifo_ctrl_0
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/terefeil/audio_vocoder_W1/firFilterBP'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/terefeil/audio_vocoder_W1/ifft_interface_ip'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/terefeil/audio_vocoder_W1/fft_interface_ip'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/terefeil/audio_vocoder_W1/processing_path_ip'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/terefeil/audio_vocoder_W1/audio_i2s'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/terefeil/audio_vocoder_W1/datapath_ip'.
+set_property location {2 -28 -713} [get_bd_cells fifo_ctrl_0]
+connect_bd_net [get_bd_pins fifo_ctrl_0/read_en] [get_bd_pins fifo_generator_0/rd_en]
+WARNING: [BD 41-1306] The connection to interface pin /fifo_generator_0/rd_en is being overridden by the user. This pin will not be connected as a part of interface connection FIFO_READ
+connect_bd_net [get_bd_pins fifo_ctrl_0/write_en] [get_bd_pins fifo_generator_0/wr_en]
+WARNING: [BD 41-1306] The connection to interface pin /fifo_generator_0/wr_en is being overridden by the user. This pin will not be connected as a part of interface connection FIFO_WRITE
+connect_bd_net [get_bd_pins fifo_ctrl_0/write_full] [get_bd_pins fifo_generator_0/full]
+WARNING: [BD 41-1306] The connection to interface pin /fifo_generator_0/full is being overridden by the user. This pin will not be connected as a part of interface connection FIFO_WRITE
+connect_bd_net [get_bd_pins fifo_generator_0/dout] [get_bd_pins dataPath_1/audiodataIn]
+WARNING: [BD 41-1306] The connection to interface pin /fifo_generator_0/dout is being overridden by the user. This pin will not be connected as a part of interface connection FIFO_READ
+connect_bd_net [get_bd_pins fifo_generator_0/din] [get_bd_pins i2s_rx_tx_0/to_datapath]
+WARNING: [BD 41-1306] The connection to interface pin /fifo_generator_0/din is being overridden by the user. This pin will not be connected as a part of interface connection FIFO_WRITE
+startgroup
+set_property -dict [list CONFIG.Input_Data_Width {24} CONFIG.Input_Depth {512} CONFIG.Output_Data_Width {24} CONFIG.Output_Depth {512} CONFIG.Data_Count_Width {9} CONFIG.Write_Data_Count_Width {9} CONFIG.Read_Data_Count_Width {9} CONFIG.Full_Threshold_Assert_Value {510} CONFIG.Full_Threshold_Negate_Value {509}] [get_bd_cells fifo_generator_0]
+INFO: [xilinx.com:ip:fifo_generator:13.2-5968] /fifo_generator_0Executing the post_config_ip from bd
+endgroup
+regenerate_bd_layout
+open_bd_design {C:/Users/terefeil/audio_vocoder_W1/audio_vocoder.srcs/sources_1/bd/design_1/design_1.bd}
+regenerate_bd_layout
+save_bd_design
+Wrote  : <C:\Users\terefeil\audio_vocoder_W1\audio_vocoder.srcs\sources_1\bd\design_1\design_1.bd> 
+Wrote  : <C:/Users/terefeil/audio_vocoder_W1/audio_vocoder.srcs/sources_1/bd/design_1/ui/bd_1f5defd0.ui> 
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 12
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /microblaze_0_axi_intc/intr
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /microblaze_0_axi_intc/intr
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /microblaze_0_axi_intc/intr
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /microblaze_0_axi_intc/intr
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /microblaze_0_axi_intc/intr
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /microblaze_0_axi_intc/intr
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /microblaze_0_axi_intc/intr
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /microblaze_0_axi_intc/intr
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /microblaze_0_axi_intc/intr
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /microblaze_0_axi_intc/intr
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /microblaze_0_axi_intc/intr
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /microblaze_0_axi_intc/intr
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /microblaze_0_axi_intc/intr
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /microblaze_0_axi_intc/intr
+WARNING: [BD 41-2180] Resetting the memory initialization file of </axi_bram_ctrl_0_bram> to default.
+INFO: [xilinx.com:ip:xfft:9.1-913] /xfft_INV input_width has been set to manual on the GUI. It will not be updated during validation with a propagated value.
+INFO: [xilinx.com:ip:xfft:9.1-913] /xfft_INV input_width has been set to manual on the GUI. It will not be updated during validation with a propagated value.
+WARNING: [xilinx.com:ip:axi_bram_ctrl:4.1-1] /axi_bram_ctrl_0: PORT /axi_bram_ctrl_0/BRAM_PORTA is UNCONNECTED in the design. Leaving the BRAM interface unconnected will cause BRAMs not to be initialized by Data2Mem
+WARNING: [xilinx.com:ip:axi_bram_ctrl:4.1-1] /axi_bram_ctrl_0: PORT /axi_bram_ctrl_0/BRAM_PORTA is UNCONNECTED in the design. Leaving the BRAM interface unconnected will cause BRAMs not to be initialized by Data2Mem
+INFO: [xilinx.com:ip:axi_intc:4.1-1] /microblaze_0_axi_intc: The AXI INTC core has been configured to operate with synchronous clocks.
+INFO: [xilinx.com:ip:axi_intc:4.1-1] /microblaze_0_axi_intc: The AXI INTC core has been configured to operate with synchronous clocks.
+INFO: [xilinx.com:ip:xfft:9.1-913] /xfft_0_FWD input_width has been set to manual on the GUI. It will not be updated during validation with a propagated value.
+INFO: [xilinx.com:ip:xfft:9.1-913] /xfft_0_FWD input_width has been set to manual on the GUI. It will not be updated during validation with a propagated value.
+INFO: [xilinx.com:ip:c_addsub:12.0-913] /c_addsub_0 A_Width has been set to manual on the GUI. It will not be updated during validation with a propagated value.
+INFO: [xilinx.com:ip:c_addsub:12.0-913] /c_addsub_0 B_Width has been set to manual on the GUI. It will not be updated during validation with a propagated value.
+INFO: [xilinx.com:ip:c_addsub:12.0-913] /c_addsub_0 A_Width has been set to manual on the GUI. It will not be updated during validation with a propagated value.
+INFO: [xilinx.com:ip:c_addsub:12.0-913] /c_addsub_0 B_Width has been set to manual on the GUI. It will not be updated during validation with a propagated value.
+INFO: [xilinx.com:ip:xfft:9.1-913] /xfft_INV1 input_width has been set to manual on the GUI. It will not be updated during validation with a propagated value.
+INFO: [xilinx.com:ip:xfft:9.1-913] /xfft_INV1 input_width has been set to manual on the GUI. It will not be updated during validation with a propagated value.
+INFO: [xilinx.com:ip:xfft:9.1-913] /xfft_0_FWD1 input_width has been set to manual on the GUI. It will not be updated during validation with a propagated value.
+INFO: [xilinx.com:ip:xfft:9.1-913] /xfft_0_FWD1 input_width has been set to manual on the GUI. It will not be updated during validation with a propagated value.
+WARNING: [BD 41-927] Following properties on pin /vga_driver_0_upgraded_ipi/BRAM_PORTB_0_clk have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	CLK_DOMAIN=design_1_vga_driver_0_upgraded_ipi_1_BRAM_PORTB_0_clk 
+WARNING: [BD 41-927] Following properties on pin /axi_child_v1_0_S00_A_0/S_AXI_ACLK have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	CLK_DOMAIN=/clk_wiz_1_clk_out1 
+Wrote  : <C:\Users\terefeil\audio_vocoder_W1\audio_vocoder.srcs\sources_1\bd\design_1\design_1.bd> 
+CRITICAL WARNING: [BD 41-1228] Width mismatch when connecting input pin '/axi_child_v1_0_S00_A_0/mic_value'(32) to net 'i2s_rx_tx_0_to_datapath'(24) - Only lower order bits will be connected, and other input bits of this pin will be left unconnected.
+CRITICAL WARNING: [BD 41-1228] Width mismatch when connecting input pin '/axi_bram_ctrl_0_bram/addra'(32) to net 'axi_bram_ctrl_0_bram_addr_a'(21) - Only lower order bits will be connected, and other input bits of this pin will be left unconnected.
+CRITICAL WARNING: [BD 41-1228] Width mismatch when connecting input pin '/axi_child_v1_0_S00_A_0/vocoder_value'(32) to net 'filterBP_0_filter_out'(24) - Only lower order bits will be connected, and other input bits of this pin will be left unconnected.
+VHDL Output written to : C:/Users/terefeil/audio_vocoder_W1/audio_vocoder.srcs/sources_1/bd/design_1/synth/design_1.v
+CRITICAL WARNING: [BD 41-1228] Width mismatch when connecting input pin '/axi_child_v1_0_S00_A_0/mic_value'(32) to net 'i2s_rx_tx_0_to_datapath'(24) - Only lower order bits will be connected, and other input bits of this pin will be left unconnected.
+CRITICAL WARNING: [BD 41-1228] Width mismatch when connecting input pin '/axi_bram_ctrl_0_bram/addra'(32) to net 'axi_bram_ctrl_0_bram_addr_a'(21) - Only lower order bits will be connected, and other input bits of this pin will be left unconnected.
+CRITICAL WARNING: [BD 41-1228] Width mismatch when connecting input pin '/axi_child_v1_0_S00_A_0/vocoder_value'(32) to net 'filterBP_0_filter_out'(24) - Only lower order bits will be connected, and other input bits of this pin will be left unconnected.
+VHDL Output written to : C:/Users/terefeil/audio_vocoder_W1/audio_vocoder.srcs/sources_1/bd/design_1/sim/design_1.v
+VHDL Output written to : C:/Users/terefeil/audio_vocoder_W1/audio_vocoder.srcs/sources_1/bd/design_1/hdl/design_1_wrapper.v
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/terefeil/audio_vocoder_W1/firFilterBP'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/terefeil/audio_vocoder_W1/ifft_interface_ip'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/terefeil/audio_vocoder_W1/fft_interface_ip'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/terefeil/audio_vocoder_W1/processing_path_ip'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/terefeil/audio_vocoder_W1/audio_i2s'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/terefeil/audio_vocoder_W1/datapath_ip'.
+INFO: [BD 41-1029] Generation completed for the IP Integrator block clk_wiz_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block proc_sys_reset_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block xfft_0_FWD .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block xfft_INV .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block i2s_rx_tx_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block fwdFFT_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block invFFT_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block dataPath_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_bram_ctrl_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_bram_ctrl_0_bram .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_iic_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_uartlite_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block clk_wiz_1 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block mdm_1 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block microblaze_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block microblaze_0_axi_intc .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block microblaze_0_axi_periph/xbar .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block microblaze_0_local_memory/dlmb_bram_if_cntlr .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block microblaze_0_local_memory/dlmb_v10 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block microblaze_0_local_memory/ilmb_bram_if_cntlr .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block microblaze_0_local_memory/ilmb_v10 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block microblaze_0_local_memory/lmb_bram .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block microblaze_0_xlconcat .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block rst_clk_wiz_1_100M .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block uart_reader_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block vga_driver_0_upgraded_ipi .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_child_v1_0_S00_A_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block fft_output_format_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block xlconstant_0_windowEnable .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block xlconstant_1_filterClkEn .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block filterBP_0_postProcessing .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block dataPath_1 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block fwdFFT_1 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block invFFT_1 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block xfft_0_FWD1 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block xfft_INV1 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block c_addsub_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block fifo_generator_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block fifo_ctrl_0 .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'c:/Users/terefeil/audio_vocoder_W1/audio_vocoder.srcs/sources_1/bd/design_1/ip/design_1_auto_pc_0/design_1_auto_pc_0_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block microblaze_0_axi_periph/m02_couplers/auto_pc .
+Exporting to file C:/Users/terefeil/audio_vocoder_W1/audio_vocoder.srcs/sources_1/bd/design_1/hw_handoff/design_1.hwh
+Generated Block Design Tcl file C:/Users/terefeil/audio_vocoder_W1/audio_vocoder.srcs/sources_1/bd/design_1/hw_handoff/design_1_bd.tcl
+Generated Hardware Definition File C:/Users/terefeil/audio_vocoder_W1/audio_vocoder.srcs/sources_1/bd/design_1/synth/design_1.hwdef
+[Tue Apr  2 20:40:27 2024] Launched synth_1...
+Run output will be captured here: C:/Users/terefeil/audio_vocoder_W1/audio_vocoder.runs/synth_1/runme.log
+[Tue Apr  2 20:40:28 2024] Launched impl_1...
+Run output will be captured here: C:/Users/terefeil/audio_vocoder_W1/audio_vocoder.runs/impl_1/runme.log
+launch_runs: Time (s): cpu = 00:00:08 ; elapsed = 00:00:12 . Memory (MB): peak = 1699.695 ; gain = 102.758
+file copy -force C:/Users/terefeil/audio_vocoder_W1/audio_vocoder.runs/impl_1/design_1_wrapper.sysdef C:/Users/terefeil/audio_vocoder_W1/audio_vocoder.sdk/design_1_wrapper.hdf
+
+file copy -force C:/Users/terefeil/audio_vocoder_W1/audio_vocoder.runs/impl_1/design_1_wrapper.sysdef C:/Users/terefeil/audio_vocoder_W1/audio_vocoder.sdk/design_1_wrapper.hdf
+
+launch_sdk -workspace C:/Users/terefeil/audio_vocoder_W1/audio_vocoder.sdk -hwspec C:/Users/terefeil/audio_vocoder_W1/audio_vocoder.sdk/design_1_wrapper.hdf
+INFO: [Vivado 12-393] Launching SDK...
+INFO: [Vivado 12-417] Running xsdk -workspace C:/Users/terefeil/audio_vocoder_W1/audio_vocoder.sdk -hwspec C:/Users/terefeil/audio_vocoder_W1/audio_vocoder.sdk/design_1_wrapper.hdf
+INFO: [Vivado 12-3157] SDK launch initiated. Please check console for any further messages.
+exit
+INFO: [Common 17-206] Exiting Vivado at Tue Apr  2 21:22:02 2024...

@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Webtalk v2018.3.1 (64-bit)
+# SW Build 2489853 on Tue Mar 26 04:20:25 MDT 2019
+# 
+# Start of session at: Sat Mar 30 21:16:08 2024
+# Process ID: 2588
+# Current directory: C:/Users/damounik/ECE532/March26_2/audio_vocoder_W1/audio_vocoder_W1/audio_vocoder.sdk/webtalk
+# Command line: wbtcv.exe -mode batch -source sdk_webtalk.tcl
+# Log file: C:/Users/damounik/ECE532/March26_2/audio_vocoder_W1/audio_vocoder_W1/audio_vocoder.sdk/webtalk/webtalk.log
+# Journal file: C:/Users/damounik/ECE532/March26_2/audio_vocoder_W1/audio_vocoder_W1/audio_vocoder.sdk/webtalk\webtalk.jou
+#-----------------------------------------------------------
+source sdk_webtalk.tcl
