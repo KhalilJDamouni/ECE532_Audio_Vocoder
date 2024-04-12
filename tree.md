@@ -1,7 +1,3 @@
-# ECE532_Audio_Vocoder
-
-## Design Tree
-``` C
 ECE532_Audio_Vocoder
 ├── README.md
 ├── audio_vocoder.hw
@@ -61,7 +57,6 @@ ECE532_Audio_Vocoder
 ├── firFilterBP //Custom IP Files
 ├── ifft_interface_ip //Custom IP Files
 └── processing_path_ip //Custom IP Files
-```
 
 
 685 directories, 2220 files
