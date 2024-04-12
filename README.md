@@ -63,5 +63,6 @@ ECE532_Audio_Vocoder
 └── processing_path_ip //Custom IP Files
 ```
 
+The above tree describes the location of the main files and folders of our project. Only the important and custom folders are described above.
 
-685 directories, 2220 files
+Firstly, all MicroBlaze related files are in `audio_vocoder.sdk`. This includes the exported hardware files and C files required to support the GUI and control signals, including the audio codec. `audio_vocoder.srcs` houses our custom Verilog code. This folder contains many redundant subfolders that were generated during integration. `DATAPATH` contains the custom System Verilog code for (Ililli Fill In). Lastly, the bottom 7 folders contain all the code for our custom IPs. The project can be opened by launching the `audio_vocoder.xpr` file in Vivado. A full and unedited design tree of all files in the project can be found in `tree.md`. 
