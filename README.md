@@ -52,10 +52,6 @@ ECE532_Audio_Vocoder
 │           ├── axi_child_512.v
 │           ├── fft_output_format.v
 │           └── fifo_ctrl.v
-├── DATAPATH //Data Path System Verilog Files.
-│   ├── dataPath.sv
-│   ├── fwdFFT.sv
-│   └── invFFT.sv
 ├── audio_i2s //Custom IP Files
 ├── audio_vocoder.xpr //Project File
 ├── datapath_ip //Custom IP Files
@@ -67,4 +63,7 @@ ECE532_Audio_Vocoder
 
 The above tree describes the location of the main files and folders of our project. Only the important and custom folders are described above.
 
-Firstly, all MicroBlaze related files are in `audio_vocoder.sdk`. This includes the exported hardware files and C files required to support the GUI and control signals, including the audio codec. `audio_vocoder.srcs` houses our custom Verilog code. This folder contains many redundant subfolders that were generated during integration. `DATAPATH` contains the custom System Verilog code for (Ililli Fill In). Lastly, the bottom 7 folders contain all the code for our custom IPs. The project can be opened by launching the `audio_vocoder.xpr` file in Vivado. A full and unedited design tree of all files in the project can be found in `tree.md`. 
+Firstly, all MicroBlaze related files are in ‘audio_vocoder.sdk’. This includes the exported hardware files and C files required to support the GUI and control signals, including the audio codec. ‘audio_vocoder.srcs’ houses our custom Verilog code. This folder contains many redundant subfolders that were generated during integration. Lastly, the bottom 6 folders contain all the code for our custom IPs. ‘audio_i2s’ contains the I2S IP files. ‘datapath_ip’ includes a file for audio processing, manipulating frequency domain data to produce different audio effects. ‘fft_interface_ip’ and ‘ifft_interface_ip’ each contain a file that is responsible for managing handshaking and data transfer with the AXI stream interface of the FFT/IFFT blocks. The project can be opened by launching the ‘audio_vocoder.xpr’ file in Vivado. 
+
+
+A full and unedited design tree of all files in the project can be found in `tree.md`. 
