@@ -1,5 +1,7 @@
 # ECE532_Audio_Vocoder
 
+Our groups final report can be found in `doc/Audio Vocoder Final Group Report - Group 11.pdf`
+
 ## Design Tree
 ``` C
 ECE532_Audio_Vocoder
